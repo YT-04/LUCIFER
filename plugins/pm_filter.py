@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('(This Movie Not Found In DataBase) || Request Your Movies Bot Owner 😉 @Hacker_FileBot ||')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -406,13 +406,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('👥 DEVS', url='https://t.me/Ak_Bot_SupportGroup'),
-            InlineKeyboardButton('🤖 Support', url='https://t.me/Ak_Bot_SupportGroup')
+            InlineKeyboardButton('👥 DEVS', url='http://t.me/Hacker_FileBot'),
+            InlineKeyboardButton('🤖 Support', url='http://t.me/Hacker_FileBot')
         ], [
-            InlineKeyboardButton('👨‍💻 Creator', url='https://t.me/IAM_A_JOKER'),
+            InlineKeyboardButton('👨‍💻 Creator', url='http://t.me/Hacker_FileBot'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ], [
-            InlineKeyboardButton('😑 YOUTUBE', url='https://youtube.com/c/MADpsychoYT'),
+            InlineKeyboardButton('🔰 Update', url='https://t.me/+1qdEeHOTLdQ1M2Vl'),
             InlineKeyboardButton('ℹ️ Help', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Support', url='https://t.me/Ak_Bot_SupportGroup'),
+            InlineKeyboardButton('🤖 Support', url='https://t.me/+1qdEeHOTLdQ1M2Vl'),
             InlineKeyboardButton('👥 Support Users', callback_data='admins')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
